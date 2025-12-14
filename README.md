@@ -56,6 +56,7 @@ We use the **OECD/Eurostat definition** adopted by the ScaleUp Institute:
 
 | Column | Required | Description |
 |--------|----------|-------------|
+| ID | ✅ | UUID for stable identity (e.g., `d407aa5e-2c32-4007-add2-56110aa3aea1`) |
 | Label | ✅ | Name (person or organization) |
 | Type | | Person / Organization |
 | Description | | Public role or description |
@@ -63,6 +64,8 @@ We use the **OECD/Eurostat definition** adopted by the ScaleUp Institute:
 | LinkedIn | | Public LinkedIn URL |
 | ScaleUpStatus | | scale-up, unicorn, ecosystem, pre-scale, unknown |
 | StatusNotes | | Justification for classification |
+
+> **Note**: The ID column ensures data integrity—you can rename Labels without breaking connections.
 
 ### Connections Columns
 
