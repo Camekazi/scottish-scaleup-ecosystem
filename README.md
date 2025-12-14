@@ -6,7 +6,7 @@ An interactive network visualization of Scotland's scale-up ecosystem - founders
 
 **Kumu**: [scottish-scaleup-ecosystem](https://kumu.io/camekazi/scottish-scaleup-ecosystem) *(coming soon)*
 
-**Data Source**: [Google Sheet](https://docs.google.com/spreadsheets/d/SHEET_ID_HERE) *(update after creating)*
+**Data Source**: [Google Sheet](https://docs.google.com/spreadsheets/d/1je0yoVeW_RBPMuKH2fD17c4afxOcoE8DFFsQiyVoOeU)
 
 ## What This Is
 
