@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: View the Live Network Map
-    url: https://kumu.io/[username]/scottish-scaleup-ecosystem
-    about: See the interactive network visualization
+    url: https://kumu.io/camekazi/scottish-scaleup-ecosystem
+    about: See the interactive network visualization (coming soon)
   - name: Edit the Data (Trusted Contributors)
-    url: https://docs.google.com/spreadsheets/d/[SHEET_ID]
+    url: https://docs.google.com/spreadsheets/d/SHEET_ID_HERE
     about: Request edit access to contribute directly
