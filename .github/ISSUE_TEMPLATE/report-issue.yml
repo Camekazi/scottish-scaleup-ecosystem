@@ -1,0 +1,54 @@
+name: Report Issue or Request Removal
+description: Report incorrect information or request removal of your data
+title: "[REPORT] "
+labels: ["report", "needs-review"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Report an Issue
+        Use this form to report inaccurate information or request removal of data.
+
+        **Removal requests**: Anyone can request removal of their own information. We aim to process these within 7 days.
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Type of Issue
+      options:
+        - "Information is incorrect"
+        - "Information is outdated"
+        - "Request removal of my data"
+        - "Request removal on behalf of someone"
+        - "Other"
+    validations:
+      required: true
+
+  - type: input
+    id: affected_entry
+    attributes:
+      label: Affected Person/Organization
+      description: Name as it appears on the map
+      placeholder: "Jane Smith or Company X"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Please explain the issue
+      placeholder: |
+        For corrections: What is wrong and what should it say?
+        For removal: Are you the person listed or authorized to request on their behalf?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: I understand this is a public issue and my GitHub username will be visible
+          required: true

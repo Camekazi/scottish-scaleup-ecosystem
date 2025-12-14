@@ -1,0 +1,84 @@
+name: Add Person or Organization
+description: Suggest someone to add to the ecosystem map
+title: "[ADD] "
+labels: ["addition", "needs-review"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Suggest an Addition
+        Help grow the Scottish Scale-Up Ecosystem map by suggesting people or organizations to add.
+
+  - type: dropdown
+    id: entry_type
+    attributes:
+      label: Type
+      options:
+        - "Person"
+        - "Organization"
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Full name of person or organization
+      placeholder: "Jane Smith or Company X"
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: Role / Description
+      description: Job title or organization type
+      placeholder: "CEO at TechCo / Accelerator"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sector
+    attributes:
+      label: Sector (if applicable)
+      options:
+        - "FinTech"
+        - "HealthTech"
+        - "DeepTech"
+        - "Social Enterprise"
+        - "General Tech"
+        - "Not applicable"
+    validations:
+      required: false
+
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn URL (optional)
+      description: Public LinkedIn profile
+      placeholder: "https://linkedin.com/in/..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: connections
+    attributes:
+      label: Known Connections
+      description: Who are they connected to in the ecosystem?
+      placeholder: |
+        - Works at CodeBase
+        - Previously at Skyscanner
+        - Advisor to X, Y, Z
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: This person/org has a public profile (LinkedIn, company website, etc.)
+          required: true
+        - label: I'm not adding private contact information
+          required: true
